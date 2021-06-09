@@ -33,13 +33,26 @@ func main() {
 	r.Static("/assets", "./static")
 	stu1 := &student{Name: "Geektutu", Age: 20}
 	stu2 := &student{Name: "Jack", Age: 22}
+	r.GET("/index/index.html", api.GetIndex)
+	r.GET("/about/about.html", api.GetAbout)
+	r.GET("/product/product.html", api.GetProduct)
+	r.GET("/product/product-list.html", api.GetProductList)
+
+	r.GET("/anli/case-img.html", api.GetCaseImg)
+	r.GET("/anli/case-img-list.html", api.GetCaseImgList)
+	r.GET("/news/news.html", api.GetNews)
+	r.GET("/contact/contact.html", api.GetContact)
+
+	r.GET("/video/case-video.html", api.GetCaseVideo)
+
+	r.GET("/question/question.html", api.GetQuestion)
 
 	r.GET("/anli", api.GetAnliList)
 	r.GET("/", func(c *gee.Context) {
 		c.HTML(http.StatusOK, "css.tmpl", nil)
 	})
-	r.GET("/students", func(c *gee.Context) {
-		c.HTML(http.StatusOK, "ce/arr.html", gee.H{
+	r.GET("/students,html", func(c *gee.Context) {
+		c.HTML(http.StatusOK, "arr.html", gee.H{
 			"title":  "gee",
 			"stuArr": [2]*student{stu1, stu2},
 		})
