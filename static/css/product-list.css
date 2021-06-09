@@ -1,0 +1,87 @@
+@import '../css/public.css';
+.product {
+  padding: 5px;
+  margin: 30px auto 0;
+}
+.product h4 {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+}
+.product .gn,
+.product .video {
+  margin: 30px auto 20px;
+}
+.product p {
+  margin: 0 auto 20px;
+  line-height: 2;
+  color: #666;
+  max-width: 95%;
+  padding: 0;
+}
+.product .video-container {
+  width: 100%;
+  height: auto;
+}
+.product .video-container video {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+.product .list-gn {
+  margin: 20px 0;
+}
+.product .list-gn h5 {
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+}
+.product .list-gn .gmiaoshu {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  text-overflow: ellipsis;
+}
+.product .list-video {
+  margin: 20px 0;
+  position: relative;
+  cursor: pointer;
+}
+.product .list-video .video-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+.product .list-video h5 {
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+}
+@media (max-width: 992px) {
+  .product p {
+    font-size: 14px;
+  }
+  .product .list-gn h5 {
+    font-size: 16px;
+    overflow: hidden;
+  }
+  .product .list-gn .gmiaoshu {
+    height: 90px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .product .list-video h5 {
+    height: 60px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+}

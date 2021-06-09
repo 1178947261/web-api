@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <title>首页</title>
+    <meta name="keywords" content="{$seo.keywords}">
+    <meta name="description" content="{$seo.description}">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+　  <script src="https://knockoutjs.com/downloads/knockout-3.5.1.js"></script>
+    <script>
+    </script>
+
+</head>
+<style>
+    /* div{
+        border: springgreen 1px solid;
+    } */
+    #headera{
+        text-decoration:none;
+        font-size: 20px;
+        color: rgb(241, 239, 239);
+        line-height: 60px;
+
+    }
+    #headera:hover{
+        color: yellow;
+        font-weight: bold;
+    }
+    .headerul li{
+        width: 110px;
+        height: 100px;
+        display: inline-block;
+        margin-left: 60px;
+        text-align: center;
+
+    }
+    .top-main{
+        width: 1920px;
+        height: 116px;
+        display: flex;
+        margin-top: -3px;
+    }
+    .top-div{
+        float: left;
+        width:480px;
+        height: 116px;
+    }
+    .bottom-main{
+        width: 1920px;
+        height: 450px;
+        display: flex;
+        margin-top: -3px;
+    }
+    .bottom-div{
+        float: left;
+        width: 480px;
+        height: 450px;
+    }
+    .synopsis{
+        width: 1520px;
+        height: 288px;
+        display: flex;
+        margin: auto 200px;
+    }
+    .synopsisdiv{
+        float: left;
+        width: 500px;
+        height: 288px;
+    }
+    #aboutbtn{
+       width: 175px;
+       height: 44px;
+       border-radius: 22px;
+       background-color:rgb(240, 192, 36);
+       color: #0a0a0a;
+       margin-top: 30px;
+       box-shadow: none;
+       font-weight: bold;
+       font-size: 18px;
+    }
+    .anli{
+        background: url(/assets/image/anli.png);
+        width: 1920px;
+        height: 724px;
+        margin-top: 100px;
+    }
+    .anlidiv div{
+        text-align: center;
+        display: inline-block;
+        width: 30%;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+
+    }
+    #anlia{
+        text-decoration:none;
+        font-size: 18px;
+        color: black;
+    }
+    #anlia:hover{
+        color: yellow;
+        font-weight: bold;
+    }
+    #anlibtn{
+       width: 175px;
+       height: 44px;
+       border-radius: 22px;
+       background-color:rgb(240, 192, 36);
+       color: #0a0a0a;
+       margin-top: 30px;
+       box-shadow: none;
+       font-weight: bold;
+       font-size: 18px;
+    }
+    .baikediv div{
+        text-align: center;
+        display: inline-block;
+        width: 20%;
+
+    }
+
+</style>
+<body style="margin: auto 50px;position: absolute;">
+
+        <!-- header -->
+        <div style="height: 100px; width: 1920px; background-color: black; float: left; position: absolute; top: 0px;" >
+            <div style="height: 80px; width: 300px; margin-left: 30px;padding-top: 5px; float: left;"><img src="/assets/image/logo.jpg"></div>
+            <div style="height: 100px; width: 1200px; float: left;">
+                <ul class="headerul" style="list-style: none;">
+                    <li ><a id="headera" href="../index/index.html" >首页</a></li>
+                    <li ><a id="headera" href="../about/about.html" >关于我们</a></li>
+                    <li ><a id="headera" href="../product/product.html" >产品介绍</a></li>
+                    <li ><a id="headera" href="../anli/case-img.html" >客户案例</a></li>
+                    <li ><a id="headera" href="../news/news.html">新闻动态</a></li>
+                    <li ><a id="headera" href="../contact/contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div style=" float: right;margin-right: 80px; vertical-align: middle;">
+                <div style="float: left; margin-top: 30px;"><img src="/assets/image/tel.jpg"></div>
+                <div style="float: left; "><span style="font-size: 20px; color: rgb(241, 239, 239); line-height: 100px;">13871551155</span></div>
+            </div>
+        </div>
+        <!-- 轮播图 -->
+        <div style="float: left; position: absolute; top: 100px;">
+            <div >
+                <img src="/assets/image/banner.png" alt="banner">
+            </div>
+            <div class="top-main">
+                <div class="top-div"><img src="/assets/image/1.jpg"></div>
+                <div class="top-div"><img src="/assets/image/2.jpg"></div>
+                <div class="top-div"><img src="/assets/image/3.jpg"></div>
+                <div class="top-div"><img src="/assets/image/4.jpg"></div>
+            </div>
+            <div class="bottom-main">
+                <div class="bottom-div"><img src="/assets/image/5.jpg"></div>
+                <div class="bottom-div"><img src="/assets/image/6.jpg"></div>
+                <div class="bottom-div"><img src="/assets/image/7.jpg"></div>
+                <div class="bottom-div"><img src="/assets/image/8.jpg"></div>
+            </div>
+        </div>
+        <!-- 简介 -->
+        <div style="float:left; margin-top: 250px; position: absolute; top: 1500px;">
+            <div style="text-align: center; width: 1920px;"><h1>XPEL500，首家引进XPEL漆面保护膜的旗舰店</h1></div>
+            <div style="font-size: 18px; text-align: center; margin-top:60px ;">
+             <pre>
+                 武汉伍零零旗舰店落座与美丽的武昌江滩长江观景台旁，是湖北首家引进XPEL漆面保护膜的旗舰店，营业十年，服务千万车<br>
+              主，是湖北唯一一家业内标杆店。<br>
+                 公司拥有8个标准化无尘施工车间，3名星级技师、6名专业技师的贴膜团队，为湖北车主提供一对一专业定制服务。<br>
+                 我们拥有行业内精准的专车专用DAP裁膜系统，电脑精密裁切，无需拆卸原车件，无需动刀，完美保护原车漆。我们崇尚匠人<br>
+              精神，追求完美细节，给您的爱车全方位保护
+             </pre>
+            </div>
+            <div class="synopsis" style="margin-bottom: 30px;">
+                <div class="synopsisdiv"><img src="/assets/image/synopsis1.jpg"></div>
+                <div class="synopsisdiv" style="margin-left: 10px;"><img src="/assets/image/synopsis2.jpg"></div>
+                <div class="synopsisdiv" style="margin-left: 10px;"><img src="/assets/image/synopsis3.jpg"></div>
+            </div>
+            <div style="text-align: center;">
+                <button id="anlibtn"><a href="../about/about.html" style="text-decoration:none;color: #000;">关于我们</a></button>
+            </div>
+        </div>
+
+
+        <!-- 施工案例 -->
+        <div style="position: absolute; top: 2500px;">
+          <div class="anli">
+            <img src="/assets/image/anli.png" style="opacity:0.98;">
+            <div style="position:relative; left:650px;top:-520px;  width: 700px;">
+               <span style="font-size: 55px; font-weight: bold; color:white; ">10年</span>
+               <span style="font-size: 70px; font-weight: bold; color: rgb(243, 189, 11);">10000+</span>
+               <span style="font-size: 55px; font-weight: bold; color: white;">施工作品</span>
+            </div>
+            <div style="position:relative; left:800px;top:-420px; width: 700px;">
+               <span style="font-size: 30px; color:white;">我们只贴膜&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;贴好膜</span>
+            </div>
+            <div style="position:relative; left:500px;top:-400px; width: 700px;">
+               <span style="font-size: 21px; color:white; ">我们用匠人的手艺，像对待艺术品一样为超过&nbsp;1000+&nbsp;客户的爱车提供过服务，武汉500汽车贴膜。</span>
+            </div>
+            <div  data-bind="foreach: seats" class="anlidiv" style="position: relative;left:100px;top:-300px; background-color: white;width:1660px; padding: 30px;">
+               <div>
+                   <img data-bind="attr:{src: name}">
+                   <p></p>
+                   <a href="" id="anlia">保时捷Taycan施工案例</a>
+               </div>
+
+            </div>
+            <div style="text-align: center; margin-top: -300px; margin-bottom: 100px;">
+                <button id="anlibtn"><a href="../anli/case-img.html" style="text-decoration:none;color: #000;">更多案例</a></button>
+            </div>
+          </div>
+        </div>
+
+
+
+    <!--人物介绍  -->
+        <div style=" width: 1920px; position: absolute; top: 4250px;">
+              <div>
+                  <img src="/assets/image/shipin.jpg">
+              </div>
+              <div style="margin-top:-5px ;">
+                  <img src="/assets/image/renwu.jpg">
+              </div>
+        </div>
+
+
+    <!-- 汽车百科 -->
+    <div style="position: absolute; top: 5960px; width: 1920px;">
+        <div style="text-align: center; margin-top: 100px; ">
+            <span style="font-size: 40px; color: rgb(8, 8, 8);">汽车贴膜百度百科</span>
+            <br>
+            <span style="font-size: 20px;">汽车贴膜百科知识，贴膜知识互动问答，你想了解的XPEL汽车贴膜知识都在这里！</span>
+        </div>
+        <div class="baikediv" style=" margin-top: 100px;width: 1520px;margin-left: 200px; ">
+               <div><img src="/assets/image/baike1.jpg"></div>
+               <div style="text-align: left; width: 450px;">
+                   <span style="font-size: 18px; font-weight: bold;">武汉哪里有专业汽车贴膜店?</span>
+                   <br>
+                   &nbsp;&nbsp;
+                   <br>
+                   <span style="font-size: 16px;">众所周知，人们都喜欢跟专业的人打交道，很多车主在了解<br>到汽车贴膜的优势之后，都会选择给...</span>
+                   <p></p>
+                   <p></p>
+                   <p></p>
+                   &nbsp;&nbsp;
+                </div>
+
+               <div><img src="/assets/image/baike2.jpg"></div>
+               <div style="text-align: left; width: 440px;">
+                   <span style="font-size: 18px; font-weight: bold;">隐形车衣不是金钟罩，不小心弄破了一点该怎么办？</span>
+                   <br>
+                   &nbsp;&nbsp;
+                   <br>
+                   <span style="font-size: 16px;">每个事物都有它的寿命、使用年限、在保证用的久的情况下<br>，还需要好好爱护保养...</span>
+                   <p></p>
+                   <p></p>
+                   <p></p>
+                   &nbsp;&nbsp;
+                </div>
+        </div>
+        <div class="baikediv" style=" margin-top: 50px;width: 1520px;margin-left: 200px; ">
+            <div><img src="/assets/image/baike3.jpg"></div>
+            <div style="text-align: left; width: 450px;">
+                <span style="font-size: 18px; font-weight: bold;">选购隐形车衣的时候都会遇到的那些“坑”</span>
+                <br>
+                &nbsp;&nbsp;
+                <br>
+                <span style="font-size: 16px;">隐形车衣是许多车主的选择，但是很多车主都会疑惑，隐形<br>车衣的作用是什么呢？</span>
+                <p></p>
+                <p></p>
+                <p></p>
+                &nbsp;&nbsp;
+            </div>
+
+            <div><img src="/assets/image/baike4.jpg"></div>
+            <div style="text-align: left; width: 440px;">
+                <span style="font-size: 18px; font-weight: bold;">武汉隐形车衣：隐形车衣这几种保养手法是错误的！</span>
+                <br>
+                &nbsp;&nbsp;
+                <br>
+                <span style="font-size: 16px;">现在一部分车主会选择给自己的爱车贴上隐形车衣来保护爱<br>车，贴上隐形车衣之后自然还是需...</span>
+                <p></p>
+                <p></p>
+                <p></p>
+                &nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="baikediv" style=" margin-top: 50px;width: 1520px;margin-left: 200px; ">
+            <div><img src="/assets/image/baike5.jpg"></div>
+            <div style="text-align: left; width: 450px;">
+                <span style="font-size: 18px; font-weight: bold;">全车汽车贴膜后72小时不能升降窗户，为什么？</span>
+                <br>
+                &nbsp;&nbsp;
+                <br>
+                <span style="font-size: 16px;">去给自己的爱车贴过膜之后，贴膜店的工作人员经常会让车<br>主在72小时内不要升降车窗，另...</span>
+                <p></p>
+                <p></p>
+                <p></p>
+                &nbsp;&nbsp;
+            </div>
+
+            <div><img src="/assets/image/baike6.jpg"></div>
+            <div style="text-align: left; width: 440px;">
+                <span style="font-size: 18px; font-weight: bold;">使用隐形车衣应该要注意避免的三个东西</span>
+                <br>
+                &nbsp;&nbsp;
+                <br>
+                <span style="font-size: 16px;">隐形车衣想必各位车主都是知道是什么的，保护爱车漆面的<br>一种车膜，那么这隐形车衣注意事项都...</span>
+                <p></p>
+                <p></p>
+                <p></p>
+                &nbsp;&nbsp;
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px; margin-bottom: 100px;">
+            <button id="anlibtn"><a href="../question/question.html" style="text-decoration:none;color: #000;">更多百科小知识</a></button>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer style="position: absolute; top: 7060px; width: 1920px;">
+        <div style="height: 447px; width: 1920px;">
+            <div style="background-color: black; height: 102px; " >
+                <div style="width: 100px;height: 102px;padding-top: 30px; float: left;"><img src="/assets/image/time.jpg" style="height: 44px; width: 44px; float: right;"></div>
+                <div style="width: 600px;height: 102px;margin-left: 20px; float: left;"><span style="color: white;font-size: 18px; line-height: 102px;" >24小时服务，要立即订购汽车美装服务或需要报价，请联系我们</span></div>
+                <div style="width: 400px;height: 102px; float: right;"><a href="../contact/contact.html"><button style="width: 175px; height: 44px; border-radius: 22px; background-color: #242424; color: #FFFFFF;margin-top: 30px;box-shadow: none;">立即预约</button></a></div>
+            </div>
+            <div style="height: 264px; background-color: rgb(43, 42, 42);" class="topdiv">
+                <div style="float: left; width: 596px;">
+                  <img src="/assets/image/footer.png" >
+                </div>
+                <div style="float: left; width: 500px;">
+                   <ul style="color: white; font-size: 18px; list-style: none;  margin-top: 60px;">
+                       <li style="margin-top: 10px;">联系人：13871551155（李高智）</li>
+                       <li style="margin-top: 10px;">Q  Q：89720887</li>
+                       <li style="margin-top: 10px;">邮箱：89720887@qq.com</li>
+                       <li style="margin-top: 10px;">地址：武汉市武昌区临江大道江滩69号</li>
+                   </ul>
+                </div>
+                <div style="height: 264px;  margin-right: 300px;">
+                    <div style="float: right; margin-top: 50px;">
+                    <img src="/assets/image/weixin.jpg" style="width: 100px; height: 100px;">
+                    <br>
+                    <span style="color: white; font-size: 18px; width: 75px; height: 18px;margin-left: 15px;">扫描咨询</span>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: black; height: 71px; text-align: center;vertical-align:middle;" >
+                  <span style="color: white;font-size: 18px; line-height: 60px;">武汉xpel500旗舰店版权所有. 备案号：鄂ICP备2020015039</span>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+@import '../css/public.css';
+.case-choice {
+  width: 100%;
+  max-width: 320px;
+  margin: 100px auto 20px !important;
+}
+.case-choice a {
+  width: 45%;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  margin: 0 2.5%;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5%;
+  background: #EEA507;
+}
+.case {
+  clear: both;
+  position: relative;
+  top: 30px;
+}
+.case-container {
+  position: relative;
+}
+.case-container-list .img {
+  width: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 3%;
+  max-height: 200px;
+  min-height: 100px;
+}
+.case-container-list .video-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 35px;
+  margin: auto;
+}
+.case-container-list .title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #666;
+  font-size: 15px;
+  overflow: hidden;
+}
+.case-container-list a:hover {
+  text-decoration: none;
+}
+.case .img-container {
+  margin: 0 auto 30px;
+}
+.case .img-container h4 {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.case .img-container .case-img-list {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+.case .page-button {
+  display: none;
+}
+.case .page {
+  width: auto;
+  height: 35px;
+  margin: 30px auto;
+}
+.case .page .page-target {
+  float: left;
+  margin: 0 10px;
+  width: auto;
+}
+.case .page .page-target span {
+  display: block;
+  padding: 0 5px;
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+}
+.case .page .page-target input {
+  width: 40px;
+  padding: 5px;
+  font-size: 13px;
+  height: 30px;
+  border: 1px solid #ccc !important;
+}
+.case .page .page-target button {
+  padding: 0 10px;
+  height: 35px;
+  background: #EEA507;
+  color: #fff;
+  margin: 0 0 0 10px;
+}
+.case .page .page-container {
+  height: 35px;
+  max-width: 245px;
+  width: 70px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.case .page .page-container span {
+  display: block;
+  width: 35px;
+  height: 100%;
+  z-index: 99;
+  float: left;
+  background: #EEA507;
+  color: #fff;
+}
+.case .page .page-container .page-left {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.case .page .page-container .page-right {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.case .page .page-container .ul-container {
+  width: auto;
+  position: relative;
+  height: 35px;
+  max-width: 175px;
+  overflow: hidden;
+  float: left;
+}
+.case .page .page-container .ul-container ul {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+.case .page .page-container .ul-container ul li {
+  width: 33px;
+  height: 35px;
+  float: left;
+  text-align: center;
+  line-height: 35px;
+  box-sizing: border-box;
+  margin: 0 1px;
+  cursor: pointer;
+  border: 1px solid #EEA507;
+}
+.case .page .page-container .ul-container ul .active {
+  color: #fff;
+  background: #EEA507;
+}
+@media (max-width: 768px) {
+  .case .page {
+    display: none;
+  }
+  .case .page-button {
+    width: 150px;
+    height: 32px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+  .case .page-button button {
+    margin: 0 2px;
+  }
+}
+.footer .footer-container .case {
+  position: relative;
+  top: 0px !important;
+}
+#xq h1{text-align: center;}
+#xq img{margin-top: 20px;}

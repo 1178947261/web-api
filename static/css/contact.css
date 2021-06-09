@@ -1,0 +1,166 @@
+@import '../css/public.css';
+.nav {
+  background: #000 !important;
+}
+.contact {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto 0;
+}
+.contact-logo {
+  width: auto;
+  height: auto;
+  max-width: 260px;
+  margin: 0 auto;
+}
+.contact-title {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+.contact-container {
+  width: 100%;
+  margin: 0 auto 30px;
+}
+.contact-container p {
+  float: left;
+  width: 70%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 17px;
+  overflow: hidden;
+}
+.contact-container p span {
+  color: #333;
+  font-weight: bold;
+}
+.contact-container-go,
+.contact-container-go:focus,
+.contact-container-go:hover {
+  margin: -16px auto 0;
+  float: right;
+  display: block;
+  background: #EEA507;
+  border: 0px;
+  color: #fff;
+}
+.contact .lunbo {
+  width: 100%;
+  height: auto;
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+}
+.contact .lunbo ul {
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 0px;
+}
+.contact .lunbo ul li {
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+.contact .lunbo ul li img {
+  width: auto;
+  height: auto;
+  max-width: 95%;
+  max-height: 95%;
+  display: block;
+  margin: auto;
+}
+.contact .lunbo-m {
+  display: none;
+}
+#wuhou,
+#qingyang,#baoxia,#taqiao {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  height: 300px;
+}
+#wuhou img,
+#qingyang img,
+#baoxia img,
+#taqiao img
+{
+  width: auto;
+}
+@media (max-width: 1200px) {
+  .contact {
+    margin: 20px auto 0;
+  }
+  .contact-logo {
+    max-width: 200px;
+  }
+  .contact-title {
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .contact .lunbo-m {
+    margin: 70px auto 0;
+    display: block;
+    width: 100%;
+  }
+  .contact .lunbo-m ul {
+    position: relative;
+  }
+  .contact .lunbo-m ul li {
+    float: left;
+  }
+  .contact .lunbo-m ol {
+    clear: both;
+    width: 90px;
+    height: 10px;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+  }
+  .contact .lunbo-m ol li {
+    width: 24px;
+    height: 100%;
+    margin: 0 3px;
+    float: left;
+    border-radius: 5px;
+    background: #111111;
+  }
+  .contact .lunbo-m ol .active {
+    background: #EEA507;
+  }
+  .contact .lunbo {
+    display: none;
+  }
+  .contact-title {
+    display: none;
+  }
+  .contact-container {
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+  }
+  .contact-container p {
+    width: 95%;
+    font-size: 15px;
+    height: 50px;
+    margin: 0 2.5%;
+  }
+  .contact-container-go,
+  .contact-container-go:focus,
+  .contact-container-go:hover {
+    float: none;
+    clear: both;
+    width: 200px;
+    height: 38px;
+    margin: 0 auto;
+    line-height: 38px;
+    padding: 0;
+  }
+  #wuhou,
+  #qingyang,#baoxia,#taqiao {
+    width: 95%;
+  }
+}

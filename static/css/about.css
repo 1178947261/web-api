@@ -1,0 +1,210 @@
+@import '../css/public.css';
+.introduce {
+  margin: 30px auto 0;
+}
+.introduce-title {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+.introduce-content {
+  line-height: 2.6;
+  text-align: center;
+  margin: 20px auto 0;
+}
+@media (max-width: 1200px) {
+  .introduce-content {
+    font-size: 15px;
+  }
+}
+.services {
+  margin: 40px auto 0;
+}
+.services-title {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.services-container {
+  margin: 30px 0;
+}
+.services-container-list {
+  padding: 0;
+  margin: 15px auto 0;
+}
+.services-container-list-container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+  cursor: pointer;
+  border: 1px solid #ECECEC;
+}
+.services-container-list-container-img {
+  width: auto;
+  height: auto;
+  margin: 50px auto;
+  max-width: 100%;
+}
+.services-container-list-container-title {
+  text-align: center;
+  line-height: 60px;
+  font-size: 25px;
+}
+.services-container-list-container-content {
+  line-height: 30px;
+  text-align: center;
+  font-size: 17px;
+  height: 90px;
+  width: 70%;
+  margin: 0 auto;
+}
+.services-container-list-container:hover {
+  background: #f4ae08;
+}
+@media (max-width: 768px) {
+  .services-container-list-container-img {
+    width: auto;
+    max-width: 30%;
+    height: auto;
+    margin: 20px auto;
+  }
+  .services-container-list-container-title {
+    line-height: 40px;
+    font-size: 18px;
+    height: 40px;
+    overflow: hidden;
+  }
+  .services-container-list-container-content {
+    line-height: 25px;
+    height: 75px;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 13px;
+  }
+}
+.lunbo-miaoshu {
+  width: 40%;
+  margin: 0 auto;
+  float: left;
+}
+.lunbo-miaoshu .zs1 {
+  width: auto;
+  max-width: 90%;
+  height: auto;
+}
+.lunbo-miaoshu .zs2 {
+  margin: 10% 0 0 30%;
+  width: auto;
+  height: auto;
+}
+.lunbo-miaoshu .title {
+  width: 40%;
+  height: 70px;
+  line-height: 70px;
+  margin: 5% auto;
+  font-size: 25px;
+  font-weight: bold;
+  overflow: hidden;
+}
+.lunbo-miaoshu .content {
+  width: 40%;
+  height: 55px;
+  line-height: 25px;
+  margin: 5% auto;
+  display: block;
+  font-size: 16px;
+  overflow: hidden;
+}
+.lunbo-container {
+  width: 60%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.lunbo-container ul {
+  position: relative;
+}
+.lunbo-container ul li {
+  float: left;
+}
+.lunbo-container ul li img {
+  width: 100%;
+  height: auto;
+}
+.lunbo-container ol {
+  width: 138px;
+  height: 34px;
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+  right: 0px;
+  margin: auto;
+}
+.lunbo-container ol li {
+  width: 46px;
+  float: left;
+  height: 100%;
+  cursor: pointer;
+}
+.lunbo-container ol li span {
+  width: 34px;
+  height: 34px;
+  display: block;
+  margin: 0 6px;
+  border-radius: 50%;
+  line-height: 34px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.4);
+  color: #000;
+}
+.lunbo-container ol .active span {
+  background: #f4ae08;
+  color: #fff;
+}
+.tu {
+  margin: 30px auto 0;
+}
+@media (max-width: 1200px) {
+  .tu {
+    margin: 30px auto 0;
+  }
+}
+@media (max-width: 1200px) {
+  .lunbo-miaoshu .zs2 {
+    max-width: 30%;
+  }
+  .lunbo-miaoshu .title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+  }
+  .lunbo-miaoshu .content {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .lunbo-miaoshu {
+    width: 100%;
+  }
+  .lunbo-miaoshu .zs2 {
+    margin: 5% auto 0;
+    max-width: 20%;
+  }
+  .lunbo-miaoshu .title {
+    width: 70%;
+    margin: 2% 15%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .lunbo-miaoshu .content {
+    width: 70%;
+    margin: 2% 15%;
+    text-align: center;
+  }
+  .lunbo-container {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
